@@ -28,8 +28,8 @@ export default function Header() {
               </svg>
             </label>
           </div>
-          <div className="mx-4 flex-1 end-2 px-2 text-2xl font-semibold flex justify-end lg:justify-start  ">
-            Portfolio
+          <div className="mx-4 flex-1 end-2 px-2 text-3xl font-bold flex justify-end lg:justify-start  ">
+          Vicky  Portfolio
           </div>
           <div className="hidden flex-none lg:block">
             <ul className="menu menu-horizontal space-x-4 text-lg">
