@@ -27,8 +27,10 @@ export default function Header() {
           <ul className="menu menu-horizontal space-x-4 text-lg">
             {/* Navbar menu content here */}
             <li><NavLink to="/" >Blog</NavLink></li>
-            <li><a>Music</a></li>
-            <li><a>Gallery</a></li>
+            <li><NavLink to="/music">Music</NavLink></li>
+            <li><NavLink to="/commercials">Commercials</NavLink></li>
+            <li><NavLink to="/webseries">Web Series</NavLink></li>
+            <li><NavLink to="/gallery">Arthouse</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
           </ul>
         </div>
@@ -40,8 +42,10 @@ export default function Header() {
       <ul className="menu bg-base-200 min-h-full w-80 p-4  space-y-4  text-lg">
         {/* Sidebar content here */}
         <li><NavLink to="/">Blog</NavLink></li>
-        <li><a>Music</a></li>
-        <li><a>Gallery</a></li>
+        <li><NavLink to="/music">Music</NavLink></li>
+        <li><NavLink to="/commercials">Commercials</NavLink></li>
+        <li><NavLink to="/webseries">Web Series</NavLink></li>
+x        <li><NavLink to="/gallery">Arthouse</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
       </ul>
     </div>
