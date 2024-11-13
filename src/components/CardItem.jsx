@@ -1,18 +1,19 @@
-import React from "react";
+import React from "react"
+import { Link } from "react-router-dom"
 
-export default function CardItem({ Img }) {
+export default function CardItem({ Img, id }) {
   return (
-    <>
-      <div className="card bg-base-100 overflow-hidden shadow-xl hover:shadow-2xl relative">
-        <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-50"></div>
-        <figure className="h-full">
+    <Link to={`/commercials/${id}`} className="block w-full aspect-[16/9] relative group">
+      <div className="absolute inset-0 bg-base-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 rounded-md">
+        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300 z-10"></div>
+        <figure className="w-full h-full">
           <img
             src={Img}
-            alt="Shoes"
-            className="h-full object-cover"
+            alt={`Commercial Item ${id}`}
+            className="w-full h-full object-cover"
           />
         </figure>
       </div>
-    </>
-  );
+    </Link>
+  )
 }

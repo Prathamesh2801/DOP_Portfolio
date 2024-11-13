@@ -13,9 +13,6 @@ export default function WebSeries() {
         <CardItem Img={dum}/>
         <CardItem Img={dum}/>
         <CardItem Img={dum}/>
-       
-
-        
     </div>
     </div>
   )
