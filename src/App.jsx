@@ -21,7 +21,7 @@ function App() {
           <Route path="/webseries" element={<WebSeries/>}></Route>
           <Route path="/gallery" element={<Gallery/>}></Route>
           <Route path="/about" element={<About/>}></Route>
-          <Route path="/commercials/:id" element={<Details/>} ></Route>
+          <Route path="/details/:id" element={<Details/>} ></Route>
         </Routes>
       <Footer />
     </BrowserRouter>
