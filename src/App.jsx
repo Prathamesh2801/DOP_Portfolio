@@ -6,7 +6,6 @@ import About from "./components/About";
 import Music from "./components/Music";
 import Commercials from "./components/Commercials";
 import WebSeries from "./components/WebSeries";
-import Gallery from "./components/Gallery";
 import Details from "./components/Details";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -19,7 +18,6 @@ function App() {
           <Route path="/music" element={<Music/>}></Route>
           <Route path="/commercials" element={<Commercials/>}></Route>
           <Route path="/webseries" element={<WebSeries/>}></Route>
-          <Route path="/gallery" element={<Gallery/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/details/:id" element={<Details/>} ></Route>
         </Routes>
