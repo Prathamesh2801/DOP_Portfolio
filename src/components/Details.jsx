@@ -29,12 +29,12 @@ export default function Details() {
 
   if (!info) {
     return (
-      <div className="min-h-screen bg-slate-700 flex items-center justify-center">
-        <div className="text-center text-white">
-          <h1 className="text-2xl mb-4">Page Not Found</h1>
+      <div className="min-h-screen bg-bg-main flex items-center justify-center">
+        <div className="text-center text-copy">
+          <h1 className="text-2xl mb-4 font-jersey">Page Not Found</h1>
           <button
             onClick={() => navigate(-1)}
-            className="bg-emerald-500 px-4 py-2 rounded-lg hover:bg-emerald-600"
+            className="bg-accent text-copy px-6 py-3 rounded hover:bg-accent/80 transition-colors duration-200"
           >
             Go Back
           </button>
@@ -44,14 +44,19 @@ export default function Details() {
   }
 
   return (
-    <section className="min-h-screen -mt-8 bg-gray-100 py-8">
+    <section className="min-h-screen -mt-8 bg-bg-main py-8 text-copy">
       <div className="relative mb-8 lg:mb-14">
-        <div className="h-48 w-full">
-          <img src={info.Img} alt="Project Image" className="h-full w-full object-cover rounded-b-2xl" />
+        <div className="h-48 md:h-64 lg:h-80 w-full">
+          <img 
+            src={info.Img} 
+            alt="Project Image" 
+            className="h-full w-full object-cover" 
+          />
+          <div className="absolute inset-0 bg-gradient-overlay opacity-50"></div>
         </div>
         <button 
           onClick={() => navigate(-1)}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center text-white bg-black bg-opacity-50 hover:bg-opacity-75 px-4 py-2 rounded-full transition-colors"
+          className="absolute top-1/2 left-8 transform -translate-y-1/2 flex items-center text-copy bg-bg-modal hover:bg-subtle px-6 py-3 rounded-lg transition-colors duration-200"
           aria-label="Go back to previous page"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -60,37 +65,42 @@ export default function Details() {
           Get Back 
         </button>
       </div>
-      <div className="max-w-7xl mx-auto p-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-40">
           <FadeInWhenVisible>
             <div>
-              <h1 className="text-4xl font-bold mb-4">{info.title}</h1>
-              <p className="text-lg mb-6">{info.desc}</p>
+              <h1 className="text-4xl font-jersey mb-6">{info.title}</h1>
+              <p className="text-copy-dim text-lg leading-relaxed mb-6">{info.desc}</p>
             </div>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div>
-                <h2 className="font-bold">Production:</h2>
-                <p>{info.production}</p>
+                <h2 className="text-lg font-jersey mb-2">Production:</h2>
+                <p className="text-copy-dim">{info.production}</p>
               </div>
               <div>
-                <h2 className="font-bold">Directed by:</h2>
-                <p>{info.director}</p>
+                <h2 className="text-lg font-jersey mb-2">Directed by:</h2>
+                <p className="text-copy-dim">{info.director}</p>
               </div>
               <div>
-                <h2 className="font-bold">Cinematographer:</h2>
-                <p>{info.cinematographer}</p>
+                <h2 className="text-lg font-jersey mb-2">Cinematographer:</h2>
+                <p className="text-copy-dim">{info.cinematographer}</p>
               </div>
             </div>
           </FadeInWhenVisible>
         </div>
         <FadeInWhenVisible>
-          <div className='py-5'>
-            <video src={info.Vid} controls loop muted className="w-full rounded-md"></video>
+          <div className='py-10'>
+            <video 
+              src={info.Vid} 
+              controls 
+              loop 
+              muted 
+              className="w-full rounded-lg border border-subtle/20"
+            ></video>
           </div>
         </FadeInWhenVisible>
-     
       </div>
     </section>
   )

@@ -20,8 +20,19 @@ export default {
       },
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#e8594e",
+          "base-100": "#0f0f0f",
+          "base-200": "#0f0f0f",
+          "base-300": "#232323",
+          "base-content": "#ecede8",
+        },
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
 }
 

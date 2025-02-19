@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <div className="drawer font-karla">
+    <div className="drawer bg-bg-main text-copy">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
@@ -20,7 +20,7 @@ export default function Header() {
             <label
               htmlFor="my-drawer-3"
               aria-label="open sidebar"
-              className="btn btn-ghost btn-square text-copy hover:text-accent"
+              className="btn btn-ghost btn-square"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,12 +42,10 @@ export default function Header() {
           </div>
           <div className="hidden flex-none lg:block">
             <ul className="menu menu-horizontal space-x-8 text-lg">
-              {/* Navbar menu content here */}
               <li><NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>FILMS</NavLink></li>
               <li><NavLink to="/music" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Music</NavLink></li>
               <li><NavLink to="/commercials" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Commercials</NavLink></li>
               <li><NavLink to="/webseries" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Web Series</NavLink></li>
-  
               <li><NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>About</NavLink></li>
             </ul>
           </div>
@@ -62,7 +60,7 @@ export default function Header() {
               <span className="text-2xl tracking-wide font-jersey">Menu</span>
               <label
                 htmlFor="my-drawer-3"
-                className="btn btn-ghost btn-circle text-copy hover:text-accent"
+                className="btn btn-ghost btn-circle"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -119,7 +117,7 @@ export default function Header() {
                 Web Series
               </NavLink>
             </li>
-           
+            
             <li className="w-full">
               <NavLink 
                 to="/about" 

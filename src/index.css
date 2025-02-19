@@ -17,7 +17,27 @@
   }
 
   body {
-    @apply font-karla text-xl font-semibold;
+    @apply font-karla text-xl font-semibold bg-bg-main text-copy min-h-screen;
+  }
+
+  /* Override DaisyUI default colors */
+  .btn {
+    @apply text-copy hover:text-copy-dim;
+  }
+
+  .btn-ghost {
+    @apply hover:bg-subtle;
+  }
+
+  .menu li > *:not(ul):not(.menu-title):not(details):active,
+  .menu li > *:not(ul):not(.menu-title):not(details).active,
+  .menu li > details > summary:active {
+    @apply bg-transparent text-accent;
+  }
+
+  .menu li > *:not(ul):not(.menu-title):not(details):hover,
+  .menu li > details > summary:hover {
+    @apply bg-subtle text-copy;
   }
 }
 
@@ -32,5 +52,14 @@
 
   .special-text {
     @apply font-jersey font-normal;
+  }
+
+  /* Additional component styles */
+  .bg-gradient-overlay {
+    @apply bg-gradient-to-t from-bg-main to-transparent;
+  }
+
+  .border-subtle {
+    @apply border-subtle/50;
   }
 }
