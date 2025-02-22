@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import finishedLogo from "../assets/img/finishedLogo.png";
 
 export default function Header() {
   // Function to close the drawer only on mobile
@@ -37,15 +38,24 @@ export default function Header() {
               </svg>
             </label>
           </div>
-          <div className="mx-4 flex-1 px-2 text-3xl tracking-wider flex justify-end lg:justify-start">
-            <span className="font-jersey">Vicky Portfolio</span>
+          <div className="mx-4 flex-1 px-2 flex items-center justify-end lg:justify-start space-x-4">
+            <div className="h-14 w-14 rounded-full bg-subtle p-1 flex items-center justify-center">
+              <img 
+                src={finishedLogo} 
+                alt="VD Logo" 
+                className="h-12 w-12 object-contain mix-blend-plus-lighter brightness-125" 
+              />
+            </div>
+            <span className="text-3xl tracking-wider font-jersey">Vicky Dubey</span>
           </div>
           <div className="hidden flex-none lg:block">
             <ul className="menu menu-horizontal space-x-8 text-lg">
-              <li><NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>FILMS</NavLink></li>
+              <li><NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>SHORT FLIMS</NavLink></li>
+              <li><NavLink to="/feature" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>FEATURE FLIMS</NavLink></li>
               <li><NavLink to="/music" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Music</NavLink></li>
               <li><NavLink to="/commercials" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Commercials</NavLink></li>
               <li><NavLink to="/webseries" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Web Series</NavLink></li>
+              <li><NavLink to="/gallery" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Arthouse</NavLink></li>
               <li><NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>About</NavLink></li>
             </ul>
           </div>
@@ -57,7 +67,16 @@ export default function Header() {
         <div className="w-full min-h-screen bg-bg-main border-l border-subtle">
           <div className="p-6 border-b border-subtle">
             <div className="flex justify-between items-center">
-              <span className="text-2xl tracking-wide font-jersey">Menu</span>
+              <div className="flex items-center space-x-3">
+                <div className="h-10 w-10 rounded-full bg-subtle p-0.5 flex items-center justify-center">
+                  <img 
+                    src={finishedLogo} 
+                    alt="VD Logo" 
+                    className="h-8 w-8 object-contain mix-blend-plus-lighter brightness-125" 
+                  />
+                </div>
+                <span className="text-2xl tracking-wide font-jersey">Menu</span>
+              </div>
               <label
                 htmlFor="my-drawer-3"
                 className="btn btn-ghost btn-circle"
@@ -78,7 +97,19 @@ export default function Header() {
                   ${isActive ? 'active' : ''}`
                 }
               >
-                FILMS
+                SHORT FILMS
+              </NavLink>
+            </li>
+            <li className="w-full">
+              <NavLink 
+                to="/feature" 
+                onClick={closeDrawer}
+                className={({ isActive }) => 
+                  `nav-link p-4 text-center text-xl tracking-wide
+                  ${isActive ? 'active' : ''}`
+                }
+              >
+                FEATURE FILMS
               </NavLink>
             </li>
             <li className="w-full">
@@ -117,7 +148,18 @@ export default function Header() {
                 Web Series
               </NavLink>
             </li>
-            
+            <li className="w-full">
+              <NavLink 
+                to="/gallery" 
+                onClick={closeDrawer}
+                className={({ isActive }) => 
+                  `nav-link p-4 text-center text-xl tracking-wide
+                  ${isActive ? 'active' : ''}`
+                }
+              >
+                Arthouse
+              </NavLink>
+            </li>
             <li className="w-full">
               <NavLink 
                 to="/about" 
