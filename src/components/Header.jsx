@@ -55,7 +55,6 @@ export default function Header() {
               <li><NavLink to="/music" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Music</NavLink></li>
               <li><NavLink to="/commercials" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Commercials</NavLink></li>
               <li><NavLink to="/webseries" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Web Series</NavLink></li>
-              <li><NavLink to="/gallery" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Arthouse</NavLink></li>
               <li><NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>About</NavLink></li>
             </ul>
           </div>
@@ -148,18 +147,7 @@ export default function Header() {
                 Web Series
               </NavLink>
             </li>
-            <li className="w-full">
-              <NavLink 
-                to="/gallery" 
-                onClick={closeDrawer}
-                className={({ isActive }) => 
-                  `nav-link p-4 text-center text-xl tracking-wide
-                  ${isActive ? 'active' : ''}`
-                }
-              >
-                Arthouse
-              </NavLink>
-            </li>
+           
             <li className="w-full">
               <NavLink 
                 to="/about" 
