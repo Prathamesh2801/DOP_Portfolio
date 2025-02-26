@@ -26,5 +26,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Keep all assets
+!src/assets/img/*
+!src/assets/video/*
+
 # Git LFS
 .git/lfs/
