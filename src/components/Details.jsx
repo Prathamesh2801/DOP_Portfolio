@@ -78,24 +78,32 @@ export default function Details() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-40">
           <FadeInWhenVisible>
             <div>
-              <h1 className="text-4xl font-jersey mb-6">{info.title}</h1>
-              <p className="text-copy-dim text-lg leading-relaxed mb-6">
+            { info.title &&  <h1 className="text-4xl tracking-widest font-jersey mb-6">
+                {info.title}
+              </h1>}
+             {info.desc &&  <p className="text-copy-dim text-lg leading-relaxed mb-6">
                 {info.desc}
-              </p>
+              </p>}
             </div>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
             <div className="space-y-6">
               <div>
-                <h2 className="text-lg font-jersey mb-2">Production:</h2>
+                {info.production && (
+                  <h2 className="text-2xl  font-thin  mb-2">Production:</h2>
+                )}
                 <p className="text-copy-dim">{info.production}</p>
               </div>
               <div>
-                <h2 className="text-lg font-jersey mb-2">Directed by:</h2>
+                {info.director && (
+                  <h2 className="text-2xl font-thin  mb-2">Directed by:</h2>
+                )}
                 <p className="text-copy-dim">{info.director}</p>
               </div>
               <div>
-                <h2 className="text-lg font-jersey mb-2">Cinematographer:</h2>
+                {info.cinematographer && (
+                  <h2 className="text-2xl  font-thin mb-2">Cinematographer:</h2>
+                )}
                 <p className="text-copy-dim">{info.cinematographer}</p>
               </div>
             </div>
@@ -103,12 +111,16 @@ export default function Details() {
         </div>
         <FadeInWhenVisible>
           <div className="py-10">
-            <video
-              src={info.Vid}
-              controls
-              loop
-              className="w-full rounded-lg border border-subtle/20"
-            ></video>
+            {info.Vid ? (
+              <video
+                src={info.Vid}
+                controls
+                loop
+                className="w-full rounded-lg border border-subtle/20"
+              ></video>
+            ) : (
+              "No  Video  Found"
+            )}
           </div>
         </FadeInWhenVisible>
       </div>
