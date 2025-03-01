@@ -3,7 +3,7 @@ import React from 'react'
 import CardItem from './CardItem'
 
 export default function Commercials() {
-  const commercialData = DATA.filter(item => item.id <= 6)
+  const commercialData = DATA.filter(item => item.id <= 9)
 
   return (
     <div className="py-16 px-14 bg-base-200">

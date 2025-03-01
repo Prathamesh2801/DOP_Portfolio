@@ -4,6 +4,9 @@ import Ad3 from "../img/ad3.png";
 import Ad4 from "../img/adImg4.jpg";
 import Ad5 from "../img/ad6.png";
 import Ad6 from "../img/ad7.png";
+import Ad7 from "../img/adImg7.jpg";
+import Ad8 from "../img/adImg8.jpg";
+import Ad9 from "../img/adImg9.jpg";
 
 import AdV1 from '../video/adVid1.mp4'
 import AdV2 from '../video/adVid2.mp4'
@@ -11,6 +14,9 @@ import AdV3 from '../video/adVid3.mp4'
 import AdV4 from '../video/adVid4.mp4'
 import AdV5 from '../video/adVid5.mp4'
 import AdV6 from '../video/adVid6.mp4'
+import AdV7 from '../video/adVid7.mp4'
+import AdV8 from '../video/adVid8.mp4'
+import AdV9 from '../video/adVid9.mp4'
 
 
 import Music1 from "../img/musicImg1.jpg";
@@ -44,6 +50,7 @@ import wsImg3 from "../img/wsImg3.jpg";
 import wsVid1 from "../video/wsVid1.mp4";
 import wsVid2 from "../video/wsVid2.mp4";
 import wsVid3 from "../video/wsVid3.mp4";
+import { desc, title } from "framer-motion/client";
 
 export const DATA = [
   {
@@ -97,6 +104,30 @@ export const DATA = [
   },
   {
     id: 7,
+    Img: Ad7,
+    Vid:AdV7,
+    title: "Valentine's Day",
+    desc: "Hey guy this how I am celebrating my Valentine’s Day with the special Cadbury Dairy Milk Silk",
+    cinematographer: "Vivek Dubey",
+  },
+  {
+    id: 8,
+    Img: Ad8,
+    Vid:AdV8,
+    title: "Lodha Crown: The Patil family ",
+    desc:"Shares how their dream of owning their home in Thane is fulfilled by Lodha Crown. They share their experience of searching out for various homes in Thane but connectivity was a major issue as they were very far from the main road and how Lodha Crown successfully solved this issue as it is located in the prime location of Thane. They say buying a home at Lodha Crown was the best decision in their life and couldnt believe they got their dream home within the budget and is centrally located as well with solving the travelling issue once Kapurbawdi Metro Station will be up. This metro station will also help the property to be appreciated by everyone. ",
+    cinematographer: "Vivek Dubey",
+  },
+  {
+    id: 9,
+    Img: Ad9,
+    Vid:AdV9,
+    title: "Lodha Crown: The Yadav family",
+    desc: "It's Crown's first anniversary and we bring to you the Yadav family in the second episode of the Mere Sapno Ka Ghar series. Watch them express their glee of a long-awaited dream that has been fulfilled at Crown. #JiyoTohAise #JeenaIssiKoKehteHain #CrownTaloja",
+    cinematographer: "Vivek Dubey",
+  },
+  {
+    id: 10,
     Img: Music1,
     Vid: MV_1,
     title: "Kalank Cover By Heeral Chhatralia",
@@ -107,7 +138,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 8,
+    id: 11,
     Img: Music2,
     Vid: MV_2,
     title: "Payroll",
@@ -119,7 +150,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 9,
+    id: 12,
     Img: Music3,
     Vid: MV_3,
     title: "Rabb Di Saun",
@@ -130,7 +161,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 10,
+    id: 13,
     Img: Music4,
     Vid: MV_4,
     title: "Tere Mere by Heeral Chhatralia",
@@ -141,7 +172,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 11,
+    id: 14,
     Img: sfImg1,
     Vid: sfVid1,
     title: "Jansankhya",
@@ -150,7 +181,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 12,
+    id: 15,
     Img: sfImg2,
     Vid: sfVid2,
     title: "Mutton Paya",
@@ -159,7 +190,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 13,
+    id: 16,
     Img: sfImg3,
     Vid: sfVid3,
     title: "The Ugly Truth",
@@ -168,7 +199,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 14,
+    id: 17,
     Img: ffImg1,
     Vid: ffVid1,
     title: "EAGLE",
@@ -179,7 +210,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 15,
+    id: 18,
     Img: ffImg2,
     Vid: ffVid2,
     title: "Zolzaal",
@@ -189,7 +220,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 16,
+    id: 19,
     Img: wsImg1,
     Vid: wsVid1,
     title: "The Gone Game 2",
@@ -199,7 +230,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 17,
+    id: 20,
     Img: wsImg2,
     Vid: wsVid2,
     title: "Pin Drop Silence",
@@ -210,7 +241,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 18,
+    id: 21,
     Img: wsImg3,
     Vid: wsVid3,
     title: "Naked",
