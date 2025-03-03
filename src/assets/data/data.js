@@ -2,22 +2,25 @@ import Ad1 from "../img/adImg1.jpg";
 import Ad2 from "../img/ad2.png";
 import Ad3 from "../img/ad3.png";
 import Ad4 from "../img/adImg4.jpg";
-import Ad5 from "../img/ad6.png";
+import Ad5 from "../img/adImg5.png";
 import Ad6 from "../img/ad7.png";
 import Ad7 from "../img/adImg7.jpg";
 import Ad8 from "../img/adImg8.jpg";
 import Ad9 from "../img/adImg9.jpg";
+import Ad10 from "../img/adImg10.png";
+import Ad11 from "../img/adImg11.png";
 
-import AdV1 from '../video/adVid1.mp4'
-import AdV2 from '../video/adVid2.mp4'
-import AdV3 from '../video/adVid3.mp4'
-import AdV4 from '../video/adVid4.mp4'
-import AdV5 from '../video/adVid5.mp4'
-import AdV6 from '../video/adVid6.mp4'
-import AdV7 from '../video/adVid7.mp4'
-import AdV8 from '../video/adVid8.mp4'
-import AdV9 from '../video/adVid9.mp4'
-
+import AdV1 from "../video/adVid1.mp4";
+import AdV2 from "../video/adVid2.mp4";
+import AdV3 from "../video/adVid3.mp4";
+import AdV4 from "../video/adVid4.mp4";
+import AdV5 from "../video/adVid5.mp4";
+import AdV6 from "../video/adVid6.mp4";
+import AdV7 from "../video/adVid7.mp4";
+import AdV8 from "../video/adVid8.mp4";
+import AdV9 from "../video/adVid9.mp4";
+import AdV10 from "../video/adVid10.mp4";
+import AdV11 from "../video/adVid11.mp4";
 
 import Music1 from "../img/musicImg1.jpg";
 import Music2 from "../img/musicImg2.jpg";
@@ -56,7 +59,7 @@ export const DATA = [
   {
     id: 1,
     Img: Ad1,
-    Vid:AdV1,
+    Vid: AdV1,
     title: "Rani Rampal",
     desc: "Behold the QUEEN for she is ready to strike GOLD. देश को रानी पे #GarvHai. We're honoured to present #GarvHai, an initiative to facilitate India's most talented and deserving athletes discover glory. For more details, visit https://adanisportsline.com/Garv-Hai",
 
@@ -65,7 +68,7 @@ export const DATA = [
   {
     id: 2,
     Img: Ad2,
-    Vid:AdV2,
+    Vid: AdV2,
     title: "Lodha Crown ",
     desc: "  When anyone thinks of Lodha Crown, here are the things that comes to your mind. Fulfilled the dream of 3000 Mumbaikars owning their dream home. The open green landspaces, amenities and quality of construction is what Lodha Crown has to offer to their future residents. These amenities and facilities offered by Lodha Group at an affordable price helped the customers seal the deal. Lodha Crown is located at the prime location in Thane offering excellent connectivity to its residents leading to a healthy and happy lifestyle within their decided budget. Lodha Crown has become one of the preferred choices for everyone staying in Thane. ",
     cinematographer: "Vivek Dubey",
@@ -73,7 +76,7 @@ export const DATA = [
   {
     id: 3,
     Img: Ad3,
-    Vid:AdV3,
+    Vid: AdV3,
     title: "Lodha Codename",
     desc: "As part of a social experiment, we reached out to school kids to understand what does a Dream Home look like?What we found out was that the image of our dream home hasn’t changed over the years.So why settle for something else now? Lodha Group presents Codename One & Only – for the first time ever in Mumbai region, land and villas in a luxury gated estate. As a child, we all had an idea of a happy home with a backyard garden, a stream running nearby, with open skies and green fields to play on.",
     cinematographer: "Vivek Dubey",
@@ -81,7 +84,7 @@ export const DATA = [
   {
     id: 4,
     Img: Ad4,
-    Vid:AdV4,
+    Vid: AdV4,
     title: "VoltasBeko  #KahanGayaMummyKaSunday",
     desc: "Sundays are our most awaited holidays, but what about moms? Their relentless routine revolves around making our Sunday perfect. With #VoltasBeko, let’s make Sunday an off for everybody. #KahanGayaMummyKaSunday",
     cinematographer: "Vivek Dubey",
@@ -98,14 +101,14 @@ export const DATA = [
   {
     id: 6,
     Img: Ad6,
-    Vid:AdV6,
+    Vid: AdV6,
     title: "Features of Xenon and Venice Chairs",
     cinematographer: "Vivek Dubey",
   },
   {
     id: 7,
     Img: Ad7,
-    Vid:AdV7,
+    Vid: AdV7,
     title: "Valentine's Day",
     desc: "Hey guy this how I am celebrating my Valentine’s Day with the special Cadbury Dairy Milk Silk",
     cinematographer: "Vivek Dubey",
@@ -113,21 +116,37 @@ export const DATA = [
   {
     id: 8,
     Img: Ad8,
-    Vid:AdV8,
+    Vid: AdV8,
     title: "Lodha Crown: The Patil family ",
-    desc:"Shares how their dream of owning their home in Thane is fulfilled by Lodha Crown. They share their experience of searching out for various homes in Thane but connectivity was a major issue as they were very far from the main road and how Lodha Crown successfully solved this issue as it is located in the prime location of Thane. They say buying a home at Lodha Crown was the best decision in their life and couldnt believe they got their dream home within the budget and is centrally located as well with solving the travelling issue once Kapurbawdi Metro Station will be up. This metro station will also help the property to be appreciated by everyone. ",
+    desc: "Shares how their dream of owning their home in Thane is fulfilled by Lodha Crown. They share their experience of searching out for various homes in Thane but connectivity was a major issue as they were very far from the main road and how Lodha Crown successfully solved this issue as it is located in the prime location of Thane. They say buying a home at Lodha Crown was the best decision in their life and couldnt believe they got their dream home within the budget and is centrally located as well with solving the travelling issue once Kapurbawdi Metro Station will be up. This metro station will also help the property to be appreciated by everyone. ",
     cinematographer: "Vivek Dubey",
   },
   {
     id: 9,
     Img: Ad9,
-    Vid:AdV9,
+    Vid: AdV9,
     title: "Lodha Crown: The Yadav family",
     desc: "It's Crown's first anniversary and we bring to you the Yadav family in the second episode of the Mere Sapno Ka Ghar series. Watch them express their glee of a long-awaited dream that has been fulfilled at Crown. #JiyoTohAise #JeenaIssiKoKehteHain #CrownTaloja",
     cinematographer: "Vivek Dubey",
   },
   {
     id: 10,
+    Img: Ad10,
+    Vid: AdV10,
+    title: "PROMO Reel Misurra",
+
+    cinematographer: "Vivek Dubey",
+  },
+  {
+    id: 11,
+    Img: Ad11,
+    Vid: AdV11,
+    title: "Luxuria",
+
+    cinematographer: "Vivek Dubey",
+  },
+  {
+    id: 12,
     Img: Music1,
     Vid: MV_1,
     title: "Kalank Cover By Heeral Chhatralia",
@@ -138,7 +157,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 11,
+    id: 13,
     Img: Music2,
     Vid: MV_2,
     title: "Payroll",
@@ -150,7 +169,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 12,
+    id: 14,
     Img: Music3,
     Vid: MV_3,
     title: "Rabb Di Saun",
@@ -161,7 +180,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 13,
+    id: 15,
     Img: Music4,
     Vid: MV_4,
     title: "Tere Mere by Heeral Chhatralia",
@@ -172,7 +191,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 14,
+    id: 16,
     Img: sfImg1,
     Vid: sfVid1,
     title: "Jansankhya",
@@ -181,7 +200,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 15,
+    id: 17,
     Img: sfImg2,
     Vid: sfVid2,
     title: "Mutton Paya",
@@ -190,7 +209,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 16,
+    id: 18,
     Img: sfImg3,
     Vid: sfVid3,
     title: "The Ugly Truth",
@@ -199,7 +218,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 17,
+    id: 19,
     Img: ffImg1,
     Vid: ffVid1,
     title: "EAGLE",
@@ -210,7 +229,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 18,
+    id: 20,
     Img: ffImg2,
     Vid: ffVid2,
     title: "Zolzaal",
@@ -220,7 +239,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 19,
+    id: 21,
     Img: wsImg1,
     Vid: wsVid1,
     title: "The Gone Game 2",
@@ -230,7 +249,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 20,
+    id: 22,
     Img: wsImg2,
     Vid: wsVid2,
     title: "Pin Drop Silence",
@@ -241,7 +260,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 21,
+    id: 23,
     Img: wsImg3,
     Vid: wsVid3,
     title: "Naked",

@@ -46,7 +46,7 @@ export default function Header() {
                 className="h-12 w-12 object-contain mix-blend-plus-lighter brightness-125" 
               />
             </div>
-            <span className="text-3xl tracking-wider font-jersey">Vivek Dubey</span>
+            <span className="text-3xl tracking-wider" style={{fontFamily: 'Oswald',fontWeight: '600'}}>Vivek Dubey</span>
           </div>
           <div className="hidden flex-none lg:block">
             <ul className="menu menu-horizontal space-x-8 text-lg">
