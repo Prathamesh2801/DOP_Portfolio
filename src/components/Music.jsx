@@ -3,7 +3,7 @@ import CardItem from './CardItem'
 import { DATA } from '../assets/data/data'
 
 export default function Music() {
-  const musicData = DATA.filter(item => item.id >= 12 && item.id <= 15)
+  const musicData = DATA.filter(item => item.id >= 13 && item.id <= 16)
 
   return (
     <div className="py-16 px-14 bg-base-200">

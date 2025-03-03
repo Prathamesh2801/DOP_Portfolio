@@ -9,6 +9,7 @@ import Ad8 from "../img/adImg8.jpg";
 import Ad9 from "../img/adImg9.jpg";
 import Ad10 from "../img/adImg10.png";
 import Ad11 from "../img/adImg11.png";
+import Ad12 from "../img/adImg12.png";
 
 import AdV1 from "../video/adVid1.mp4";
 import AdV2 from "../video/adVid2.mp4";
@@ -21,7 +22,7 @@ import AdV8 from "../video/adVid8.mp4";
 import AdV9 from "../video/adVid9.mp4";
 import AdV10 from "../video/adVid10.mp4";
 import AdV11 from "../video/adVid11.mp4";
-
+import AdV12 from "../video/adVid12.mp4";
 import Music1 from "../img/musicImg1.jpg";
 import Music2 from "../img/musicImg2.jpg";
 import Music3 from "../img/music3.jpg";
@@ -142,11 +143,17 @@ export const DATA = [
     Img: Ad11,
     Vid: AdV11,
     title: "Luxuria",
-
     cinematographer: "Vivek Dubey",
   },
   {
     id: 12,
+    Img: Ad12,
+    Vid: AdV12,
+    title: "Luxuria",
+    cinematographer: "Vivek Dubey",
+  },
+  {
+    id: 13,
     Img: Music1,
     Vid: MV_1,
     title: "Kalank Cover By Heeral Chhatralia",
@@ -157,7 +164,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 13,
+    id: 14,
     Img: Music2,
     Vid: MV_2,
     title: "Payroll",
@@ -169,7 +176,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 14,
+    id: 15,
     Img: Music3,
     Vid: MV_3,
     title: "Rabb Di Saun",
@@ -180,7 +187,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 15,
+    id: 16,
     Img: Music4,
     Vid: MV_4,
     title: "Tere Mere by Heeral Chhatralia",
@@ -191,7 +198,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 16,
+    id: 17,
     Img: sfImg1,
     Vid: sfVid1,
     title: "Jansankhya",
@@ -200,7 +207,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 17,
+    id: 18,
     Img: sfImg2,
     Vid: sfVid2,
     title: "Mutton Paya",
@@ -209,7 +216,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 18,
+    id: 19,
     Img: sfImg3,
     Vid: sfVid3,
     title: "The Ugly Truth",
@@ -218,7 +225,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 19,
+    id: 20,
     Img: ffImg1,
     Vid: ffVid1,
     title: "EAGLE",
@@ -229,7 +236,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 20,
+    id: 21,
     Img: ffImg2,
     Vid: ffVid2,
     title: "Zolzaal",
@@ -239,7 +246,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 21,
+    id: 22,
     Img: wsImg1,
     Vid: wsVid1,
     title: "The Gone Game 2",
@@ -249,7 +256,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 22,
+    id: 23,
     Img: wsImg2,
     Vid: wsVid2,
     title: "Pin Drop Silence",
@@ -260,7 +267,7 @@ export const DATA = [
     cinematographer: "Vivek Dubey",
   },
   {
-    id: 23,
+    id: 24,
     Img: wsImg3,
     Vid: wsVid3,
     title: "Naked",

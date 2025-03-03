@@ -4,7 +4,7 @@ import { DATA } from "../assets/data/data";
 
 
 export default function FeaureFilms() {
-  const shortFlims = DATA.filter((item) => item.id > 18 && item.id <= 20);
+  const shortFlims = DATA.filter((item) => item.id > 19&& item.id <= 21);
   return (
     <div className="py-16 px-14 bg-base-200">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
