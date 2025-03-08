@@ -13,6 +13,7 @@ export default function Commercials() {
             key={data.id}
             id={data.id}
             Img={data.Img}
+           
           />
         ))}
       </div>

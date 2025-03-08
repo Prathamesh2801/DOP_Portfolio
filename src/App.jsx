@@ -15,12 +15,12 @@ function App() {
     <BrowserRouter>
       <Header />
         <Routes>
-          <Route path="/" element={<ShortFilms/>}></Route>
+          <Route path="/short-films" element={<ShortFilms/>}></Route>
           <Route path="/feature" element={<FeaureFilms/>}></Route>
           <Route path="/music" element={<Music/>}></Route>
           <Route path="/commercials" element={<Commercials/>}></Route>
           <Route path="/webseries" element={<WebSeries/>}></Route>
-          <Route path="/about" element={<About/>}></Route>
+          <Route path="/" element={<About/>}></Route>
           <Route path="/details/:id" element={<Details/>} ></Route>
         </Routes>
       <Footer />
