@@ -7,7 +7,7 @@ export default function About() {
   
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-base-200">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <Typewriter />
@@ -23,7 +23,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-base-200">
         <div className="grid max-w-screen-xl px-4 py-5 mx-auto lg:gap-6 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h2 className="text-2xl font-semibold text-gray-200 lg:mb-2 md:text-lg lg:text-2xl dark:text-gray-300 ">
