@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import finishedLogo from "../assets/img/finishedLogo.png";
+import finishedLogo from "../assets/img/logo4.png";
 
 export default function Header() {
   // Function to close the drawer only on mobile
@@ -39,7 +39,7 @@ export default function Header() {
             </label>
           </div>
           <div className="mx-4 flex-1 px-2 flex items-center justify-end lg:justify-start space-x-4">
-            <div className="h-14 w-14 rounded-full bg-subtle p-1 flex items-center justify-center">
+            {/* <div className="h-14 w-14 rounded-full bg-subtle p-1 flex items-center justify-center">
               <img
                 src={finishedLogo}
                 alt="VD Logo"
@@ -51,7 +51,16 @@ export default function Header() {
               style={{ fontFamily: "Oswald", fontWeight: "600" }}
             >
               Vivek Dubey
-            </span>
+            </span> */}
+
+            <div className=" p-1 flex items-center justify-center">
+              <img
+                src={finishedLogo}
+                alt="VD Logo"
+                className="h-16  md:h-24 w-auto object-contain mix-blend-plus-lighter brightness-125"
+              />
+            </div>
+           
           </div>
           <div className="hidden flex-none lg:block">
             <ul className="menu menu-horizontal space-x-8 text-lg">
