@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "./Typewriter";
 
 import Carousel from "./Carousel";
-import imdb from '../assets/img/about/imdb.png'
+
 import {  Mail,Phone} from "lucide-react";
 export default function About() {
 
@@ -19,7 +19,7 @@ export default function About() {
               every vision to life.
             </p>
             <p>Find Me On : </p>
-            <div className="flex p-4 space-x-14">
+         ]
             <div className="pt-5 space-y-6">
               <div className="flex gap-4 items-center">
                 <div className="flex bg-blue-600/30 h-10 justify-center rounded-lg w-10 items-center">
@@ -35,10 +35,8 @@ export default function About() {
                 <span className="font-normal">vickky20j@gmail.com</span>
               </div>
             </div>
-            <div>
-              <a href="https://www.imdb.com/name/nm12972853/?ref_=ext_shr" target="_blank"><img src={imdb} className="hover:scale-110" alt="" height={120} width={120}/></a>
-            </div>
-            </div>
+          
+         
 
           </div>
           <div className="rounded-xl lg:col-span-5 lg:mt-0 mt-4 overflow-hidden">
